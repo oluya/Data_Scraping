@@ -20,8 +20,7 @@ The objectives of the assignment were:
 4.  Store structured data into a Pandas DataFrame.
 5.  Export the final dataset to a .csv file.
 
-Link to Code: https://colab.research.google.com/drive/1HMCdngpsaqpx3zms8zc9Dv
-yaRyXrdtH?usp=sharing 
+Link to Code: https://colab.research.google.com/drive/1HMCdngpsaqpx3zms8zc9DvyaRyXrdtH?usp=sharing 
 ### Step 1: Import Required Libraries 
 These are essential Python libraries for web scraping and data handling: 
 * requests: Used to send an HTTP request to the website and get the HTML content.
@@ -57,10 +56,29 @@ team data row by row.
 * Clean each cell’s text and store in a list.
 * Append the list as a new row to the DataFrame using df.loc[len(df)].
 
-   
+
+  
 ### Step 8: Display the DataFrame 
 This line shows the complete DataFrame in the notebook to verify that all rows and columns were 
 correctly extracted. 
 ### Step 9: Export Data to CSV 
 The final dataset is saved to a .csv file named Hockey.csv. This makes it easy to reuse the data for 
 further analysis or visualization.
+
+## Conclusion
+
+This web scraping project has provided a practical introduction to automated data collection using 
+Python. By focusing on hockey team statistics from scrapethissite.com, the assignment demonstrated 
+how structured data can be extracted from a web page’s HTML structure using BeautifulSoup, and 
+then organised and stored using pandas. The final result — a clean CSV file — represents a valuable 
+and reusable dataset that can be used for academic analysis, visualization exercises, or further 
+statistical modelling. 
+Throughout the exercise, key programming concepts such as HTTP requests, HTML parsing, and 
+iterative data processing were applied in a real-world context. The project reinforced the importance 
+of clean coding practices, attention to detail when navigating web page structures, and the power of 
+automation in handling repetitive tasks. Overall, this assignment not only meets its objective of 
+extracting sports data programmatically but also builds a foundation for more advanced applications 
+in data analytics and web automation. 
+This project underscores the educational value of hands-on programming assignments in bridging 
+theory with real-world application —a key goal in today’s computer science and data science 
+education. 
