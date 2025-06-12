@@ -39,12 +39,12 @@ search for specific HTML elements (like tables, rows, and data cells).
 
 
 ### Step 4: Locate the Table Containing Hockey Data 
-The find() function searches for the table element with class table, which contains the hockey team 
+The *find()* function searches for the table element with class table, which contains the hockey team 
 statistics. This is the main source of data on the page. 
 
 
 ### Step 5: Extract Column Headers 
-Column headers (<th> tags) are extracted from the table and cleaned using .strip() to remove extra 
+Column headers (*th* tags) are extracted from the table and cleaned using .strip() to remove extra 
 spaces or newline characters. This list will serve as the column names for our DataFrame. 
 
 
@@ -52,8 +52,8 @@ spaces or newline characters. This list will serve as the column names for our D
 A blank pandas DataFrame is initialized with the extracted column names. This structure will store the 
 team data row by row. 
 ### Step 7: Extract Data Rows and Populate the DataFrame 
-* Loop through all table rows (<tr> tags), skipping the header.
-* Inside each row, extract all data cells (<td> tags).
+* Loop through all table rows (*<tr>* tags), skipping the header.
+* Inside each row, extract all data cells (*<td>* tags).
 * Clean each cell’s text and store in a list.
 * Append the list as a new row to the DataFrame using df.loc[len(df)].
 
